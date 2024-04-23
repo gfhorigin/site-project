@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWS: roadmaps</title>
+    <link rel="stylesheet" href="styles.css" type = "text/css"/>
+	
+	<style>
+		.hidden {
+			display: flex;
+		}
+	</style>
+	
+	<style>
+		.buttonChangeColor {
+		  text-decoration: none;
+		  color: #FFFFFF;
+		}
+		a.buttonChangeColor:hover {
+		  color:  #FFFFFF;
+		  text-shadow: 0 0 5px  #FFFFFF;
+		}
+	</style>
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class = "header_pc" id = "header_pc">
+		<audio id="audio" src="sounds/womp.mp3"></audio>
+		<img src="images/DWS_logo.png" width = "120px" id = "DWS_logo"
+		onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? 'images/DWS_logo.png' : 'images/DWS_logo.png';if(audio.paused){audio.currentTime=0;audio.play()}else{audio.pause()}">
+		<nav>
+			<ul class = "header_menu_pc" id = "header_menu_pc">
+				<li>
+					<a href = "news.html" class="buttonChangeColor">Статьи</a>
+				</li>
+				<li>
+					<a href = "roadmaps.html" class="buttonChangeColor">RoadMaps</a>
+				</li>
+				<li>
+					<a href = "OurTeam.html" class="buttonChangeColor">Команда DWS</a>
+				</li>
+				<li>
+					<a href = "games.html" class="buttonChangeColor">Игры</a>
+				</li>
+			</ul>
+			<div class = "burger_bg" id = "burger_bg"></div>
+			<div class = "burger" id = "burger" class="buttonChangeColor">
+				<span></span>
+			</div>
+		</nav>
+    </header>
+    
+	
+	<main class="articles_roadmap">
+		<!статьи>
+		<div class = "article_roadmap">
+
+			<div class = "title_roadmaps">
+				<a href = "https://docs.google.com/document/d/1enMmmLQLmgUtjnFYOLNci4F0973UTOA23Cdy36katxk/edit" class="buttonChangeColor">Bizzare Pixel Adventure</a>
+				<p>Последнее обновление: 25 мая 2022</p>
+				
+			</div>
+			
+			
+			<div class = "content_article_roadmap">
+				<p>• ver. 1.0.5.3</p>
+				
+			</div>
+			<div class = "content_article_roadmap">
+				<p1>• Был исправлен краб</p1>
+			</div>
+			<div class = "content_article_roadmap">
+				<p1>• Были сломаны титры</p1>
+			</div>
+			<div class = "content_article_roadmap">
+				<p1>• Был сломан остальной контент</p1>
+			</div>
+		</div>
+		
+		
+		<div class = "article_roadmap">
+
+			<div class = "title_roadmaps">
+				<a href = "https://docs.google.com/document/d/18ll9iIXsksyIwWjVYEtu8l3Gszbeuw9J4z0p31bVcH8/edit" class="buttonChangeColor">Tower Defence</a>
+				<p>Последнее обновление: 10 февраля 2024</p>
+				
+			</div>
+			
+			
+			<div class = "content_article_roadmap">
+				<p>• ver. 0.0.2</p>
+				
+			</div>
+			<div class = "content_article_roadmap">
+				<p1>• Переделана система дорожек противников</p1>
+			</div>
+			<div class = "content_article_roadmap">
+				<p1>• Сделана базовая логика передвижения противников</p1>
+			</div>
+		</div>
+		<!конец статей>
+    </main>
+    <footer class = "footer_pc">
+		<div>All rights(not) reserved</div>
+		<div>(C) Drunk Wizards Studio</div>
+    </footer>
+	
+	<script>
+	  var element = document.getElementById("burger");
+	  var otherElement = document.getElementById("header_menu_pc");
+
+	  element.addEventListener("click", function() {
+	   this.classList.toggle('active');
+	   otherElement.classList.toggle("hidden");
+	  });
+	  
+	  onemoreotherElement = document.getElementById("burger_bg");
+	  
+	  element.addEventListener("click", function() {
+	   this.classList.toggle('active');
+	   onemoreotherElement.classList.toggle("hidden");
+	  });
+	</script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWS: games</title>
+    <link rel="stylesheet" href="styles.css" type = "text/css"/>
+	
+	<style>
+		.hidden {
+			display: flex;
+		}
+	</style>
+	
+	<style>
+		.buttonChangeColor {
+		  text-decoration: none;
+		  color: #FFFFFF;
+		}
+		a.buttonChangeColor:hover {
+		  color:  #FFFFFF;
+		  text-shadow: 0 0 5px  #FFFFFF;
+		}
+	</style>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class = "header_pc" id = "header_pc">
+		<audio id="audio" src="sounds/womp.mp3"></audio>
+		<img src="images/DWS_logo.png" width = "120px" id = "DWS_logo"
+		onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? 'images/DWS_logo.png' : 'images/DWS_logo.png';if(audio.paused){audio.currentTime=0;audio.play()}else{audio.pause()}">
+		<nav>
+			<ul class = "header_menu_pc" id = "header_menu_pc">
+				<li>
+					<a href = "news.html" class="buttonChangeColor">Статьи</a>
+				</li>
+				<li>
+					<a href = "roadmaps.html" class="buttonChangeColor">RoadMaps</a>
+				</li>
+				<li>
+					<a href = "OurTeam.html" class="buttonChangeColor">Команда DWS</a>
+				</li>
+				<li>
+					<a href = "games.html" class="buttonChangeColor">Игры</a>
+				</li>
+			</ul>
+			<div class = "burger_bg" id = "burger_bg"></div>
+			<div class = "burger" id = "burger" class="buttonChangeColor">
+				<span></span>
+			</div>
+		</nav>
+    </header>
+    
+	
+	<main class="articles_roadmap">
+		<!статьи>
+		
+		<div class = "article_games">
+			<div class = "title_article_games">
+				<img class = "logo_article_games" src = "images/GameLogos/EG_logo.png">
+				<a href = "https://drive.google.com/drive/folders/14JByJSMUlciY4Dx7q2ZBtnbw-SonDE5p" class="buttonChangeColor">Tower Defence Simulator</a>
+				<p>Запланированная дата выхода: 9 мая 2024</p>
+			</div>
+			<div class = "content_article_games">
+				<p>Это захватывающая игра в жанре "таверн дефенс", где игроки должны защищать свой передвижной замок от наступающей армии лича,
+				используя различные виды баррикад и бойцов с уникальными способностями. Битвы напряженные и требуют хорошей стратегии для победы.</p>
+			</div>
+		</div>
+		
+		<div class = "article_games">
+			<div class = "title_article_games">
+				<img class = "logo_article_games" src = "images/GameLogos/DG_logo.png">
+				<a href = "https://drive.google.com/drive/folders/1N6qNIb6wTadVptwn53ghrn63ex8xvODq" class="buttonChangeColor">Dungeon Game</a>
+				<p>Дата выхода: 25 марта 2023</p>
+			</div>
+			<div class = "content_article_games">
+				<p>В этой игре игроки отправляются в бесконечные подземелья,
+				полные врагов и секретов.
+				Быстрые рефлексы и стратегическое мышление помогут выжить в этой безумной стрельбе.</p>
+			</div>
+		</div>
+		
+		<div class = "article_games">
+			<div class = "title_article_games">
+				<img class = "logo_article_games" src = "images/GameLogos/BOD_logo.png">
+				<a href = "https://drive.google.com/drive/folders/1KV9XlBIU22YX2AsQ_NK5MsCMbh9kPRMR" class="buttonChangeColor">Bureau Of Dangers</a>
+				<p>Дата выхода: 24 марта 2023</p>
+			</div>
+			<div class = "content_article_games">
+				<p>Игрок становится охотником, выполняющим заказы на охоту на внеземных монстров.
+				Уникальные бои, квесты и множество разнообразия делают эту игру захватывающей и увлекательной.</p>
+			</div>
+		</div>
+		
+		<div class = "article_games">
+			<div class = "title_article_games">
+				<img class = "logo_article_games" src = "images/GameLogos/SPOH_logo.png">
+				<a href = "https://drive.google.com/drive/folders/1Ar9U70yF4BAmTb7asD_nFZEKw1GPlk5L" class="buttonChangeColor">Seven Powers Of Hero</a>
+				<p>Дата выхода: 14 февраля 2023</p>
+			</div>
+			<div class = "content_article_games">
+				<p>В этой приключенческой игре игрок в роли путника отправляется в опасное путешествие,
+				чтобы победить главного злодея Ai_vani и спасти королевство. Большой мир, загадки и битвы делают игру незабываемой.</p>
+			</div>
+		</div>
+		
+		<div class = "article_games">
+			<div class = "title_article_games">
+				<img class = "logo_article_games" src = "images/GameLogos/BPA_logo.png">
+				<a href = "https://drive.google.com/drive/folders/1iUZGytcDPyihEvRE72vcNLBKYFZzRaxM" class="buttonChangeColor">Bizzare Pixel Adventure</a>
+				<p>Дата выхода: 25 мая 2022</p>
+			</div>
+			<div class = "content_article_games">
+				<p>это захватывающий платформер с увлекательным сюжетом,
+				где игроку предстоит исследовать мрачные подземелья и прочие локации, чтобы сразиться с различными врагами для
+				раскрытия тайны загадочного мира.</p>
+			</div>
+		</div>
+		<!конец статей>
+    </main>
+    <footer class = "footer_pc">
+		<div>All rights(not) reserved</div>
+		<div>(C) Drunk Wizards Studio</div>
+    </footer>
+	
+	<script>
+	  var element = document.getElementById("burger");
+	  var otherElement = document.getElementById("header_menu_pc");
+
+	  element.addEventListener("click", function() {
+	   this.classList.toggle('active');
+	   otherElement.classList.toggle("hidden");
+	  });
+	  
+	  onemoreotherElement = document.getElementById("burger_bg");
+	  
+	  element.addEventListener("click", function() {
+	   this.classList.toggle('active');
+	   onemoreotherElement.classList.toggle("hidden");
+	  });
+	 </script>
+  </body>
+</html>

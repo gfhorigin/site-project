@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWS: news</title>
+    <link rel="stylesheet" href="styles.css" type = "text/css"/>
+	
+	<style>
+		.hidden {
+			display: flex;
+		}
+	</style>
+	
+	<style>
+		.buttonChangeColor {
+		  text-decoration: none;
+		  color: #FFFFFF;
+		}
+		a.buttonChangeColor:hover {
+		  color:  #FFFFFF;
+		  text-shadow: 0 0 5px  #FFFFFF;
+		}
+	</style>
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class = "header_pc" id = "header_pc">
+		<audio id="audio" src="sounds/womp.mp3"></audio>
+		<img src="images/DWS_logo.png" width = "120px" id = "DWS_logo"
+		onclick="this.src = (this.src.indexOf ('.jpg') > 0) ? 'images/DWS_logo.png' : 'images/DWS_logo.png';if(audio.paused){audio.currentTime=0;audio.play()}else{audio.pause()}">
+		<nav>
+			<ul class = "header_menu_pc" id = "header_menu_pc">
+				<li>
+					<a href = "news.html" class="buttonChangeColor">Статьи</a>
+				</li>
+				<li>
+					<a href = "roadmaps.html" class="buttonChangeColor">RoadMaps</a>
+				</li>
+				<li>
+					<a href = "OurTeam.html" class="buttonChangeColor">Команда DWS</a>
+				</li>
+				<li>
+					<a href = "games.html" class="buttonChangeColor">Игры</a>
+				</li>
+			</ul>
+			<div class = "burger_bg" id = "burger_bg"></div>
+			<div class = "burger" id = "burger" class="buttonChangeColor">
+				<span></span>
+			</div>
+		</nav>
+    </header>
+    
+	
+	<main class="articles_pc">
+		<!статьи>
+		<div class = "article_news_pc">
+			<!img class = "logo_article_news_pc" src = "BPA_logo.png">
+			<div class = "title_article_news_pc">
+				<a href = "Article-story-drunk-wizard-studio.html" class="buttonChangeColor">История Drunk Wizard Studio: Путь от Скромных Начинаний к Скромным Реалиям</a>
+			</div>
+			<div class = "content_article_news_pc">
+				<p>Весной 2022 года появился сайт Drunk Wizard Studio - молодой и амбициозной студии, которая занимается разработкой компьютерных игр.
+				В этой статье мы расскажем историю создания сайта, а также о первых разработчиках и их последующем пути к успеху.</p>
+			</div>
+			<div class = "title_article_news_pc">
+				<a href = "Article-what-sites-consist-of.html" class="buttonChangeColor">Из чего состоят сайты</a>
+			</div>
+			<div class = "content_article_news_pc">
+				<p>Рассмотрим основные технические компоненты и строение сайта.
+				Дизайн сайта отвечает за визуальное представление и организацию информации, способствует взаимодействию ресурса с его посетителями.</p>
+			</div><div class = "title_article_news_pc">
+				<a href = "Article-dumplings.html" class="buttonChangeColor">Пельмени</a>
+			</div>
+			<div class = "content_article_news_pc">
+				<p>Что такое ПЕЛЬМЕНИ?
+
+				ПЕЛЬМЕНИ — блюдо, распространённое в традиционной кухне народов России: русской, удмуртской, коми и некоторых других финно-угорских народов.
+				Изготавливаются в виде термически обработанных изделий из пресного теста с начинкой из рубленого мяса или рыбы.</p>
+			</div><div class = "title_article_news_pc">
+				<a href = "Article-splendor-of-the-frogs-left-paws.html" class="buttonChangeColor">Великолепие Левых Лапок Лягушек</a>
+			</div>
+			<div class = "content_article_news_pc">
+				<p>Природа является источником бесконечной красоты, и одним из ее самых удивительных проявлений являются левые лапки лягушек.</p>
+			</div>
+			
+		</div>
+		<!конец статей>
+    </main>
+    <footer class = "footer_pc">
+		<div>All rights(not) reserved</div>
+		<div>(C) Drunk Wizards Studio</div>
+    </footer>
+	
+	<script>
+	  var element = document.getElementById("burger");
+	  var otherElement = document.getElementById("header_menu_pc");
+
+	  element.addEventListener("click", function() {
+	   this.classList.toggle('active');
+	   otherElement.classList.toggle("hidden");
+	  });
+	  
+	  onemoreotherElement = document.getElementById("burger_bg");
+	  
+	  element.addEventListener("click", function() {
+	   this.classList.toggle('active');
+	   onemoreotherElement.classList.toggle("hidden");
+	  });
+	 </script>
+  </body>
+</html>
