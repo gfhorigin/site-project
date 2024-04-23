@@ -3,10 +3,10 @@
 	padding: 0;
 }
 body {
-	background: url(images/Background.png) no-repeat center;
-	-webkit-background-size: cover;
-	background-size: cover;
-}
+	    background: url(images/Background.png) no-repeat center;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	}
 
 .header_pc{
 	
